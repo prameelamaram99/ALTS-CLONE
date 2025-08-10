@@ -1,4 +1,4 @@
-### Prerequisites
+# Prerequisites
 Python 3.10+ (3.11 works fine, avoid 3.12+ if using Whisper or Coqui TTS)
 Pip (latest version)
 Git installed
@@ -11,24 +11,24 @@ ollama pull llama3.2
 
 
 --------------------------------------------------------------------------------------------------------
-# Clone Your Project
+## Clone Your Project
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
 
-# Create Virtual Environment
+## Create Virtual Environment
 python -m venv .venv
 source .venv/bin/activate   # Mac/Linux
 .venv\Scripts\activate      # Windows
 
-# Install Python Dependencies
+## Install Python Dependencies
 pip install git+https://github.com/alxpez/keyboard.git
 pip install git+https://github.com/alxpez/alts-notify.git
 pip install litellm openai-whisper pystray python-dotenv simpleaudio sounddevice soundfile psutil
 pip install TTS pyyaml pillow
 
-# Download Models
+## Download Models
 python -m whisper --model base.en
 
-# Run the Program
+## Run the Program
 python alts.py
 
